@@ -604,7 +604,7 @@ object Battle {
                 // This is so that future checks which check if a unit has been captured are caught give the right answer
                 //  For example, in postBattleMoveToAttackedTile
                 capturedUnit.civInfo = attacker.getCivInfo()
-                attacker.getCivInfo().placeUnitNearTile(capturedUnitTile.position, Constants.worker)
+                attacker.getCivInfo().placeUnitNearTile(capturedUnitTile.position, Constants.settler)
             }
             else -> capturedUnit.capturedBy(attacker.getCivInfo())
         }
